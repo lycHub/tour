@@ -1,0 +1,27 @@
+<?php
+    header('Content-type:image/jpeg');
+    session_start();
+    $width=78;$height=34;
+    for($a=0;$a<5;$a++){
+        $str.=dechex(mt_rand(0,15));
+    }
+     $_SESSION['code']=$str;
+    $img=imagecreatetruecolor($width,$height);
+    $color_bj=imagecolorallocate($img,rand(100,250),rand(100,250),rand(100,250));
+    $color_bk=imagecolorallocate($img,rand(50,120),rand(50,120),rand(50,120));
+    $color_xian=imagecolorallocate($img,rand(200,350),rand(200,320),rand(200,320));
+    $color_dian=imagecolorallocate($img,rand(250,350),rand(250,320),rand(250,320));
+    $color_zi=imagecolorallocate($img,rand(10,50),rand(10,50),rand(10,50));
+    imagefill($img,0,0,$color_bj);
+    imagerectangle($img,0,0,$width-1,$height-1,$color_bk);
+    for($i=0;$i<5;$i++){
+        imageline($img,rand(0,($width-1)/2),rand(0,$height-1),rand(($width-1)/2,$width-1),rand(0,$height-1),$color_xian);
+    }
+    for($i=0;$i<100;$i++){
+        imagesetpixel($img,rand(0,$width-1),rand(0,$height-1),$color_dian);
+    }
+    for($a=0;$a<strlen($str);$a++){
+        imagestring($img,5,$a*$width/strlen($str)+mt_rand(1,10),mt_rand(1,$height/2),substr($str,$a,1),$color_zi);
+    }
+    imagejpeg($img);
+?>

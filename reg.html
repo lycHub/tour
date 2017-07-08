@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/reg.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/reg.css"/>
+	<link rel="shortcut icon" href="images/icon.png" />
+</head>
+<body>
+<h1>
+    <div class="wrap">
+        <a href="index.html" title="旅游同城"><img src="images/reg20151231102443.png"></a>
+        <span>欢迎注册</span>
+    </div>
+</h1>
+<div id="main">
+    <div class="wrap">
+        <div class="top">
+            <span class="step1">填写注册信息</span>
+            <span class="step2">接受并填写验证码</span>
+            <span class="step3">注册成功</span>
+        </div>
+        <div class="bottom">
+            <form>
+                <p><strong>*</strong><label for="phone">手机号码</label><input maxlength="11" type="text" id="phone" name="phone"/><b class="first"></b></p>
+                <p><strong>*</strong><label for="pass">登录密码</label><input maxlength="18" minlength="6" type="password" id="pass" name="pass"/><b></b></p><!--<span class="prompt">6-18位，区分大小写,字母、数字、特殊符号中的两种或两种以上</span>-->
+                <ul><span>安全等级</span><li class="lv1">弱</li><li class="lv2">中</li><li class="lv3">强</li></ul>
+                <p><strong>*</strong><label for="passAgain">确认密码</label><input maxlength="18" minlength="6" type="password" id="passAgain" name="passAgain"/><b></b></p>
+                <p><strong>*</strong>
+                    <label>验证码</label><input type="text" maxlength="6" class="code" name="code"/>
+                    <img src="code.php">
+                    <i>换一张</i>
+                </p>
+                <p class="ly_card"><em></em>我有同程旅游合作联名卡</p>
+                <input id="lma" name="lmk" type="hidden">
+                <p class="hide">
+                    <label>卡名称</label>
+                    <select name="refid">
+                        <option value="-1">请选择联名卡</option>
+                        <option value="4190479" title="农行-金穗同程旅游贵宾金卡">农行-金穗同程旅游贵宾金卡</option>
+                        <option value="10259843" title="中信银行-同程旅游联名信用卡">中信银行-同程旅游联名信用卡</option>
+                        <option value="11554280" title="邮储银行－同程旅游信用卡">邮储银行－同程旅游信用卡</option>
+                        <option value="11554339" title="建行-同程龙卡联名信用卡">建行-同程龙卡联名信用卡</option>
+                        <option value="14416130" title="工商银行-同程旅游联名信用卡">工商银行-同程旅游联名信用卡</option>
+                        <option value="21226831" title="南昌银行-金瑞同程旅游联名借记卡">南昌银行-金瑞同程旅游联名借记卡</option>
+                        <option value="21471789" title="恒丰银行-同程旅游联名借记卡">恒丰银行-同程旅游联名借记卡</option>
+                        <option value="23017265" title="广发银行-同程旅游联名信用卡">广发银行-同程旅游联名信用卡</option>
+                        <option value="21496812" title="吴江农商行-同程旅游联名借记卡">吴江农商行-同程旅游联名借记卡</option>
+                        <option value="26472002" title="北京银行-同程旅游联名信用卡">北京银行-同程旅游联名信用卡</option>
+                        <option value="4464767" title="浦发轻松理财－同程商旅卡">浦发轻松理财－同程商旅卡</option>
+                        <option value="26155763" title="韩亚银行-同程旅游联名借记卡">韩亚银行-同程旅游联名借记卡</option>
+                        <option value="37544516" title="广东华兴银行-同程联名卡">广东华兴银行-同程联名卡</option>
+                        <option value="37529999" title="招商银行-同程联名卡">招商银行-同程联名卡</option>
+                        <option value="21631376" title="上海银行-同程旅游联名储蓄卡">上海银行-同程旅游联名储蓄卡</option>
+                    </select>
+                </p>
+                <p class="ly_card"><em></em>我已阅读并同意<a href="javascript:;">《同程旅游服务条款》</a></p>
+                <input name="lma" type="hidden">
+                <input type="submit" value="同意服务条款并注册" class="sub" />
+
+            </form>
+        </div>
+    </div>
+</div>
+<div id="mu"></div>
+<div id="dialog">
+    <h2><<同程旅游服务条款>><a href="#"></a></h2>
+    <h3>1．同程旅游服务条款的确认 </h3>
+    <p> 同程旅游的所有权与运作权归同程网络科技股份有限公司（以下简称"同程"）所有。本服务条款具有法律约束力。一旦您点选 "注册"并通过注册程序，即表示您自愿接受本协议之所有条款，并已成为同程旅游的注册会员。用户在享用同程旅游会员服务的同时，同意接受同程旅游会员服务提供的各类信息服务。 </p>
+    <h3>1．同程旅游服务条款的确认 </h3>
+    <p> 同程旅游的所有权与运作权归同程网络科技股份有限公司（以下简称"同程"）所有。本服务条款具有法律约束力。一旦您点选 "注册"并通过注册程序，即表示您自愿接受本协议之所有条款，并已成为同程旅游的注册会员。用户在享用同程旅游会员服务的同时，同意接受同程旅游会员服务提供的各类信息服务。 </p>
+    <h3>1．同程旅游服务条款的确认 </h3>
+    <p> 同程旅游的所有权与运作权归同程网络科技股份有限公司（以下简称"同程"）所有。本服务条款具有法律约束力。一旦您点选 "注册"并通过注册程序，即表示您自愿接受本协议之所有条款，并已成为同程旅游的注册会员。用户在享用同程旅游会员服务的同时，同意接受同程旅游会员服务提供的各类信息服务。 </p>
+    <h3>1．同程旅游服务条款的确认 </h3>
+    <p> 同程旅游的所有权与运作权归同程网络科技股份有限公司（以下简称"同程"）所有。本服务条款具有法律约束力。一旦您点选 "注册"并通过注册程序，即表示您自愿接受本协议之所有条款，并已成为同程旅游的注册会员。用户在享用同程旅游会员服务的同时，同意接受同程旅游会员服务提供的各类信息服务。 </p>
+    <h3>1．同程旅游服务条款的确认 </h3>
+    <p> 同程旅游的所有权与运作权归同程网络科技股份有限公司（以下简称"同程"）所有。本服务条款具有法律约束力。一旦您点选 "注册"并通过注册程序，即表示您自愿接受本协议之所有条款，并已成为同程旅游的注册会员。用户在享用同程旅游会员服务的同时，同意接受同程旅游会员服务提供的各类信息服务。 </p>
+    <h3>1．同程旅游服务条款的确认 </h3>
+    <p> 同程旅游的所有权与运作权归同程网络科技股份有限公司（以下简称"同程"）所有。本服务条款具有法律约束力。一旦您点选 "注册"并通过注册程序，即表示您自愿接受本协议之所有条款，并已成为同程旅游的注册会员。用户在享用同程旅游会员服务的同时，同意接受同程旅游会员服务提供的各类信息服务。 </p>
+</div>
+</body>
+</html>

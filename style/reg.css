@@ -1,0 +1,247 @@
+/**基本格式开始***************/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-style:normal;
+    font-size:14px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+img, a img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+/**基本格式结束***************/
+body{font:12px/20px "Microsoft YaHei"}
+.wrap{
+    width:1190px;
+    margin:0 auto;
+}
+h1 .wrap{
+    padding:20px 0 50px;
+}
+h1 .wrap span{
+    display:inline-block;
+    font-size:22px;
+    font-weight:400;
+    color:#333;
+    position:relative;
+    left:15px; bottom:10px;
+}
+#main .top{
+    height:60px;
+    background:url(../images/reg.png) no-repeat 0 -10px;
+    position: relative;
+}
+#main .top span{
+    color:#999;
+    font:700 16px/24px "Microsoft YaHei";
+    width:246px;
+    height:34px;
+    text-align:center;
+    position:absolute;
+}
+#main .top span.step1{
+    left:210px;bottom:0;
+}
+#main .top span.step2{
+    right:485px;bottom:0;
+}
+
+#main .top span.step3{
+    right:210px;bottom:0;
+}
+#main .bottom{
+    height:467px;
+    position:relative;
+}
+#main .bottom form{
+   margin-left:23%;
+}
+#main .bottom form p label{
+    display:inline-block;
+    width:95px;
+    color:#333;
+    text-align:center;
+}
+#main .bottom form p img{
+    cursor:pointer;
+    width:78px;
+    height:34px;
+    margin-left:10px;
+    vertical-align:middle;
+}
+#main .bottom form p i{
+    color:#0185c6;
+    cursor:pointer;
+    margin-left:4px;
+}
+#main .bottom form input.sub{
+    display:inline-block;
+    border-radius:3px;
+    background-color:#ff7800;
+    font:20px/42px "Microsoft YaHei";
+    color:#fff;
+    width:220px;
+    height:42px;
+    line-height:37px;
+    text-align:center;
+    margin:20px 0 0 104px;
+}
+#main .bottom form p{
+    clear:both;
+    padding:17px 0;
+    position:relative;
+}
+#main .bottom form p.ly_card{
+    padding:0;
+    margin-left:100px;
+}
+#main .bottom form span.prompt{
+    color:#999;
+    position:absolute;
+    top:93px;right:130px;
+}
+#main .bottom form p input{
+    border-radius:2px;
+    box-shadow:0.5px 1px 1px #eaeaea inset;
+    color:#666;
+    font-family:Arial;
+    width:258px;
+    height:32px;
+    font-size:18px;
+    line-height:32px;
+    margin-left:10px;
+    padding-left:10px;
+    clear:both;
+    border:1px solid #ccc;
+}
+#main .bottom form p u{
+    text-decoration:none;
+    background-color:#fff7dc;
+    border:1px solid #f4e09d;
+    color:#666;
+    display:inline-block;
+    height:32px;
+    line-height:32px;
+    vertical-align:middle;
+    margin-left:10px;
+    padding:0 10px 0 30px;
+    background:url(../images/reg.png) -154px -435px;
+}
+#main .bottom form p strong{
+    font-family:SimSun;
+    color:red;
+}
+#main .bottom form p.hide{
+    display:none;
+}
+#main .bottom form p input.code{
+    width:100px;
+}
+#main .bottom form p b{
+    display:inline-block;
+    width:16px;
+    height:18px;
+    background:url(../images/reg.png) -906px -196px;
+    position:absolute;
+    left:360px;top:25px;
+}
+#main .bottom form p b.first{
+    background-position:-863px -195px;
+}
+#main .bottom form p em{
+    border:1px solid #ccc;
+    display:inline-block;
+    width:13px;
+    height:13px;
+    vertical-align:middle;
+    margin:0 4px 0 10px;
+}
+#main .bottom form p em.gou{
+    background:url(../images/reg.png) 2px -529px;
+}
+#main .bottom form p select{
+    border:1px solid #ddd;
+    color:#999;
+    padding:3px 3px 3px 0;
+    margin-left:10px;
+}
+#main .bottom form ul{
+    padding-left:210px;
+    line-height:16px;
+}
+#main .bottom form ul span{
+    font-size:12px;
+    color:#999;
+    float:left;
+}
+#main .bottom form ul li{
+    width:34px;
+    margin-left:2px;
+    float:left;
+    background-color:#ccc;
+    color:#fff;
+    font-size:11px;
+    height:14px;
+    line-height:14px;
+    overflow:hidden;
+    text-align:center;
+}
+#mu{
+    cursor:pointer;
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color:#000;
+    opacity:0.7;
+    filter:alpha(opacity=70);
+    left:0;top:0;
+    display:none;
+}
+#dialog{
+    width:660px;
+    height:374px;
+    padding:0 15px 25px;
+    background-color:#fff;
+    position:absolute;
+    overflow:scroll;
+    display:none;
+}
+#dialog h2{
+    font-family:宋体,sans-serif;
+    font-weight:700;
+    text-align:center;
+    margin-top:15px;
+    position:relative;
+}
+#dialog h2 a{
+    display:block;
+    width:18px;
+    height:15px;
+    position:absolute;
+    right:0;bottom:5px;
+    background:url(../images/reg.png) -1129px -241px;
+}
+#dialog h3{
+    line-height:22px;
+    margin-top:15px;
+}
+#dialog p{
+    font-size:12px;
+    line-height:18px;
+    margin-left:2em;
+    margin-top:15px;
+}
